@@ -41,6 +41,8 @@ public class MainFrame extends JFrame {
 
     JButton refreshBtn;
 
+    JButton searchAllBtn;
+
     DefaultTableModel tableModel;
 
     JTextArea note;
@@ -53,7 +55,7 @@ public class MainFrame extends JFrame {
     public MainFrame() {
         setLayout(null);
         setTitle("Just For Fun");
-        setBounds(500 , 500, 680, 340);
+        setBounds(500 , 500, 690, 340);
         init();
         setLocationRelativeTo(null);
         setVisible(true);
@@ -76,6 +78,7 @@ public class MainFrame extends JFrame {
                 setMemberBtn.setEnabled(true);
                 startBtn.setEnabled(true);
                 refreshBtn.setEnabled(true);
+                searchAllBtn.setEnabled(true);
                 appendMsg("设置cookie成功");
             }
 
@@ -97,6 +100,13 @@ public class MainFrame extends JFrame {
         refreshBtn.addActionListener((e)->{
             refreshVaccines();
         });
+
+        searchAllBtn = new JButton("查找全国疫苗");
+        searchAllBtn.setEnabled(false);
+        searchAllBtn.addActionListener((e)->{
+            refreshAllVaccines();
+        });
+
 
         note = new JTextArea();
         note.append("日记记录：\r\n");
@@ -144,13 +154,14 @@ public class MainFrame extends JFrame {
 
         scrollPane.setBounds(10,10,460,200);
 
-        startBtn.setBounds(370, 230, 100, 30);
+        startBtn.setBounds(370, 270, 100, 30);
 
         setCookieBtn.setBounds(20, 230, 100, 30);
         setMemberBtn.setBounds(130, 230, 100, 30);
         refreshBtn.setBounds(240, 230,120, 30);
+        searchAllBtn.setBounds(370,230,120,30);
 
-        scroll.setBounds(480, 10, 180, 280);
+        scroll.setBounds(500, 10, 180, 280);
 
         add(scrollPane);
         add(scroll);
@@ -158,6 +169,7 @@ public class MainFrame extends JFrame {
         add(setCookieBtn);
         add(setMemberBtn);
         add(refreshBtn);
+        add(searchAllBtn);
         add(provinceBox);
         add(cityBox);
         add(setAreaBtn);
@@ -165,28 +177,6 @@ public class MainFrame extends JFrame {
 
 
 
-    private void refreshVaccines(){
-        try {
-            vaccines = service.getVaccines();
-            //清除表格数据
-            //通知模型更新
-            ((DefaultTableModel)vaccinesTable.getModel()).getDataVector().clear();
-            ((DefaultTableModel)vaccinesTable.getModel()).fireTableDataChanged();
-            vaccinesTable.updateUI();//刷新表
-            if(vaccines != null && !vaccines.isEmpty()){
-                for (VaccineList t : vaccines) {
-                    String[] item = { t.getId().toString(), t.getVaccineName(),t.getName() ,t.getStartTime()};
-                    tableModel.addRow(item);
-
-                }
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-            appendMsg("未知错误");
-        } catch (BusinessException e) {
-            appendMsg("错误："+e.getErrMsg()+"，errCode"+e.getCode());
-        }
-    }
     private void start(){
         if(StringUtils.isEmpty(Config.cookies)){
             appendMsg("请配置cookie!!!");
@@ -217,7 +207,50 @@ public class MainFrame extends JFrame {
         }).start();
 
     }
+    private void refreshVaccines(){
+        try {
+            vaccines = service.getVaccines();
+            //清除表格数据
+            //通知模型更新
+            ((DefaultTableModel)vaccinesTable.getModel()).getDataVector().clear();
+            ((DefaultTableModel)vaccinesTable.getModel()).fireTableDataChanged();
+            vaccinesTable.updateUI();//刷新表
+            if(vaccines != null && !vaccines.isEmpty()){
+                for (VaccineList t : vaccines) {
+                    String[] item = { t.getId().toString(), t.getVaccineName(),t.getName() ,t.getStartTime()};
+                    tableModel.addRow(item);
 
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            appendMsg("未知错误");
+        } catch (BusinessException e) {
+            appendMsg("错误："+e.getErrMsg()+"，errCode"+e.getCode());
+        }
+    }
+    private void refreshAllVaccines(){
+        try {
+            vaccines = service.getAllVaccines();
+            //清除表格数据
+            //通知模型更新
+            ((DefaultTableModel)vaccinesTable.getModel()).getDataVector().clear();
+            ((DefaultTableModel)vaccinesTable.getModel()).fireTableDataChanged();
+            vaccinesTable.updateUI();//刷新表
+            if(vaccines != null && !vaccines.isEmpty()){
+                for (VaccineList t : vaccines) {
+                    String[] item = { t.getId().toString(), t.getVaccineName(),t.getName() ,t.getStartTime()};
+                    tableModel.addRow(item);
+
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            appendMsg("未知错误");
+        } catch (BusinessException e) {
+            appendMsg("错误："+e.getErrMsg()+"，errCode"+e.getCode());
+        }
+    }
 
     public void appendMsg(String message){
         note.append(message);

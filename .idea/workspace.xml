@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a082965b-4c3b-428a-b5a3-554c5d7006a1" name="Default Changelist" comment="" />
+    <list default="true" id="a082965b-4c3b-428a-b5a3-554c5d7006a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seckill.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lyrric/conf/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lyrric/conf/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lyrric/service/HttpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lyrric/service/HttpService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lyrric/service/SecKillService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lyrric/service/SecKillService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lyrric/ui/ConsoleMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lyrric/ui/ConsoleMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lyrric/ui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lyrric/ui/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/seckill.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/lyrric/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/lyrric/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/lyrric/frame/MyFrame$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/lyrric/frame/MyFrame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/lyrric/model/BusinessException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/lyrric/model/BusinessException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/lyrric/model/HttpResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/lyrric/service/HttpService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/lyrric/service/HttpService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/lyrric/service/SecKillService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/lyrric/service/SecKillService.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +36,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
@@ -23,35 +48,41 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="E:\mvn_repository" />
-        <option name="userSettingsFile" value="D:\My Data\apache-maven-3.5.3\conf\settings.xml" />
+        <option name="localRepository" value="D:\maven\apache-maven-3.6.3\repo" />
+        <option name="mavenHome" value="D:\maven\apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\maven\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenRunner">
     <option name="vmOptions" value="-DarchetypeCatalog=local" />
   </component>
   <component name="ProjectId" id="1ezDJ9eWHdZOlegHQRsN9wKoqZp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/论文/all/code/travel-crm-acc" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.other" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -110,6 +141,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -122,99 +154,54 @@
       <updated>1595315452581</updated>
       <workItem from="1595315458366" duration="33826000" />
       <workItem from="1595470713952" duration="4911000" />
+      <workItem from="1608903141196" duration="6261000" />
+      <workItem from="1608968752105" duration="30000" />
+      <workItem from="1608993094778" duration="212000" />
+      <workItem from="1608997068507" duration="9000" />
+      <workItem from="1609148379430" duration="2863000" />
+      <workItem from="1609401378626" duration="6006000" />
+      <workItem from="1609420692961" duration="608000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Project_Structure" timestamp="1595315474886">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595315474886" />
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595471838273">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1595471838273" />
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595396099187" />
-    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1595471302892">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1595471302892" />
-    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595411353164" />
-    <state width="1877" height="315" key="GridCell.Tab.0.bottom" timestamp="1595484575341">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="315" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1595484575341" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595410380820" />
-    <state width="1877" height="315" key="GridCell.Tab.0.center" timestamp="1595484575340">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="315" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1595484575340" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595410380820" />
-    <state width="1877" height="315" key="GridCell.Tab.0.left" timestamp="1595484575340">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="315" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1595484575340" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595410380820" />
-    <state width="1877" height="315" key="GridCell.Tab.0.right" timestamp="1595484575341">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="315" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1595484575341" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595410380820" />
-    <state width="1877" height="263" key="GridCell.Tab.1.bottom" timestamp="1595483347735">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="263" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1595483347735" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595410387083" />
-    <state width="1877" height="263" key="GridCell.Tab.1.center" timestamp="1595483347735">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="263" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1595483347735" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595410387083" />
-    <state width="1877" height="263" key="GridCell.Tab.1.left" timestamp="1595483347735">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="263" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1595483347735" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595410387083" />
-    <state width="1877" height="263" key="GridCell.Tab.1.right" timestamp="1595483347735">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="263" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1595483347735" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595410387083" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1595384577882">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595384577882" />
-    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1595386405618">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595386405618" />
-    <state x="640" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1595470859406">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="640" y="343" key="com.intellij.ide.util.TipDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1595470859406" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1595471650717">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1595471650717" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595409241132" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/github/lyrric/service/SecKillService.java</url>
-          <line>78</line>
+          <line>84</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/github/lyrric/service/SecKillService.java</url>
-          <line>41</line>
+          <line>47</line>
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/lyrric/service/HttpService.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

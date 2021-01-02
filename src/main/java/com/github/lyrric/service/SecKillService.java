@@ -7,6 +7,7 @@ import com.github.lyrric.ui.MainFrame;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import sun.nio.ch.ThreadPool;
 
 import java.io.IOException;
 import java.text.DateFormat;
@@ -15,9 +16,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Random;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -36,6 +35,13 @@ public class SecKillService {
 
     public SecKillService() {
         httpService = new HttpService();
+    }
+
+    public List<VaccineList> getVaccines() throws IOException, BusinessException {
+        return httpService.getVaccineList(Config.regionCode);
+    }
+    public List<VaccineList> getAllVaccines() throws IOException, BusinessException {
+        return httpService.getAllVaccineList();
     }
 
     /**
@@ -144,9 +150,7 @@ public class SecKillService {
         }
 
     }
-    public List<VaccineList> getVaccines() throws IOException, BusinessException {
-        return httpService.getVaccineList();
-    }
+
     /**
      *  将时间字符串转换为时间戳
      * @param dateStr yyyy-mm-dd格式

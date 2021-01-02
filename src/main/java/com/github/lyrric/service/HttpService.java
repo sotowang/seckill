@@ -3,6 +3,7 @@ package com.github.lyrric.service;
 import com.alibaba.fastjson.JSONObject;
 import com.github.lyrric.conf.Config;
 import com.github.lyrric.model.*;
+import com.github.lyrric.util.ParseUtil;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.Header;
@@ -21,18 +22,24 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.FutureTask;
+import java.util.concurrent.SynchronousQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created on 2020-07-22.
  *
  * @author wangxiaodong
  */
-public class HttpService {
+public class HttpService{
 
     private String baseUrl = "https://miaomiao.scmttec.com";
 
     private final Logger logger = LogManager.getLogger(HttpService.class);
 
+    private ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(4, 8, 1000,
+            TimeUnit.MILLISECONDS, new SynchronousQueue<>());
 
     /***
      * 获取秒杀资格
@@ -63,7 +70,7 @@ public class HttpService {
      * @return
      * @throws BusinessException
      */
-    public List<VaccineList> getVaccineList() throws BusinessException, IOException {
+    public List<VaccineList> getVaccineList(String regionCode) throws BusinessException, IOException {
         hasAvailableConfig();
         String path = baseUrl+"/seckill/seckill/list.do";
         Map<String, String> param = new HashMap<>();
@@ -71,9 +78,20 @@ public class HttpService {
         param.put("offset", "0");
         param.put("limit", "100");
         //这个应该是成都的行政区划前四位
-        param.put("regionCode", Config.regionCode);
+        param.put("regionCode", regionCode);
         String json = get(path, param, null);
         return JSONObject.parseArray(json).toJavaList(VaccineList.class);
+    }
+    public List<VaccineList> getAllVaccineList() throws  BusinessException,IOException {
+        hasAvailableConfig();
+        List<VaccineList> vaccineLists = new ArrayList<>();
+        List<Area> areas = ParseUtil.getAreas();
+        for (Area area : areas) {
+            for (Area city : area.getChildren()) {
+                vaccineLists.addAll(getVaccineList(city.getValue()));
+            }
+        }
+        return vaccineLists;
     }
 
 
@@ -210,4 +228,5 @@ public class HttpService {
         String json =  get(path, params, null);
         logger.info("提交接种时间，返回数据: {}", json);
     }
+
 }

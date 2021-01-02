@@ -54,7 +54,7 @@ public class ConsoleMode {
         Config.idCard = members.get(no).getIdCardNo();
 
         log.info("获取疫苗列表......");
-        List<VaccineList> vaccineList = httpService.getVaccineList();
+        List<VaccineList> vaccineList = httpService.getVaccineList(Config.regionCode);
         for (int i = 0; i < vaccineList.size(); i++) {
             VaccineList item = vaccineList.get(i);
             log.info("{}-{}-{}-{}-{}", i, item.getName(), item.getVaccineName(), item.getAddress(), item.getStartTime());
